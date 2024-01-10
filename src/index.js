@@ -7,7 +7,7 @@ import Survey from './pages/survey/'
 import Header from './components/header'
 import Error from './components/Error'
 import Freelances from './pages/freelances'
-// import Results from './pages/results'
+import Footer from './components/footer'
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 
@@ -21,6 +21,7 @@ root.render(
         <Route path="*" element={<Error />} />
         <Route path="/freelances" element={<Freelances />} />
       </Routes>
+      <Footer />
     </Router>
   </React.StrictMode>,
 )
