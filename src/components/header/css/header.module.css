@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 140px;
+    margin: 0 50px;
+}
+
+.image {
+    width: 160px;
+    height: 40%;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 200px;
+}
+.NavLink {
+    font-size: 20px;
+    font-weight: 500;
+    color: #FF6060;
+}
+.NavLink:hover {
+    cursor: pointer;
+}
