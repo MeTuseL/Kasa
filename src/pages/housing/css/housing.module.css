@@ -1,0 +1,31 @@
+.carrousel_container{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 400px;
+    border-radius: 25px;
+    overflow: hidden;
+    margin: 0 50px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.carrousel_image{
+    position: absolute;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    filter: brightness(0.85);
+}
+.carrousel_icon{
+    font-size: 60px;
+    color: white;
+    cursor: pointer;
+    padding: 20px;
+    transition: font-size 0.2s;
+}
+.carrousel_icon:hover{
+   font-size: 65px;
+}
