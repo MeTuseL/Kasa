@@ -1,6 +1,6 @@
 import imgBannerHome from '../../assets/images/banner_Home.png'
 import dataHousing from '../../data/housingAd.json'
-import Thumbnail from '../../components/thumbnail'
+import Card from '../../components/card'
 import Banner from '../../components/banner'
 import styles from './css/home.module.css'
 
@@ -8,11 +8,12 @@ import styles from './css/home.module.css'
 function Home() {
   const bannerTitle = 'Chez vous, partout et ailleurs'
   return (
-    <main>
+    <section>
       <Banner picture={imgBannerHome} title={bannerTitle} />
+
       <div className={styles.container}>
         {dataHousing.map((house, index) => (
-          <Thumbnail
+          <Card
             key={`${house.title}-${index}`}
             id={house.id}
             title={house.title}
@@ -20,7 +21,7 @@ function Home() {
           />
         ))}
       </div>
-    </main>
+    </section>
   )
 }
 

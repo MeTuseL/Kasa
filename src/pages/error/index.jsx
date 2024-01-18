@@ -5,17 +5,21 @@ import styles from './css/error.module.css'
 //page error 404
 function Error() {
   return (
-    <main>
+    <section>
       <div className={styles.container}>
-        <img className={styles.image} src={imgError} alt="Erreur 404" />
-        <h1 className={styles.title}>
+        <img
+          className={styles.container__image}
+          src={imgError}
+          alt="Erreur 404"
+        />
+        <h1 className={styles.container__title}>
           Oups! La page que vous demandez n'existe pas.
         </h1>
-        <Link className={styles.Link} to="/">
+        <Link className={styles.container__Link} to="/">
           Retourner sur la page d’accueil
         </Link>
       </div>
-    </main>
+    </section>
   )
 }
 

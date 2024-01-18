@@ -2,12 +2,12 @@
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    width: 75%;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     overflow: hidden;
+    width: 100%;
 }
-.header{
+.container__header{
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -20,27 +20,27 @@
     padding: 0 20px;
 }
 
-.title{
-    font-size: 20px;
+.container__header__title{
+    font-size: 17px;
     font-weight: 500;
 }
-.icon{
+.container__header__icon{
     font-size: 20px;
     transition: all ease 0.9s;
 }
-.content{
+
+.container__hide {
+    overflow: hidden;
+    transition: height ease 0.9s;
+}
+    
+.container__show {
+    transition: height ease 0.9s;
+}
+.container__showHide__content{
     font-size: 16px;
     font-weight: 400;
     background-color: #F6F6F6;
     color: #FF6060;
     padding: 20px;
 }
-.contentHide {
-    overflow: hidden;
-    transition: height ease 0.9s;
-}
-    
-.contentShow {
-    transition: height ease 0.9s;
-}
-

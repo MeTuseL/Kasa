@@ -4,6 +4,7 @@ import imgBannerAbout from '../../assets/images/banner_about.png'
 import dataAbout from '../../data/about.json'
 import styles from './css/about.module.css'
 
+//page about
 function About() {
   return (
     <section>

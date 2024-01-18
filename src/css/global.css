@@ -9,3 +9,12 @@ body {
 a {
     text-decoration: none;
 }
+li {
+  list-style-type: none 
+}
+header,main {
+  margin: 0 50px;
+}
+main {
+  min-height: 100vh;
+}

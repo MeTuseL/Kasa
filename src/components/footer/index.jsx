@@ -6,8 +6,14 @@ function Footer() {
   return (
     <footer>
       <div className={styles.container}>
-        <img className={styles.image} src={logoFooter} alt="Logo de Kasa" />
-        <span className={styles.span}>© 2020 Kasa. All rights reserved</span>
+        <img
+          className={styles.container__image}
+          src={logoFooter}
+          alt="Logo de Kasa"
+        />
+        <span className={styles.container__span}>
+          © 2020 Kasa. All rights reserved
+        </span>
       </div>
     </footer>
   )

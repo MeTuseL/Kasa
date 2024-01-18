@@ -4,20 +4,28 @@ import styles from './css/header.module.css'
 
 //component header
 function Header() {
-  //add underline style if the link is active or not
+  //add underline style if the link page is active or not
   const isActiveNav = ({ isActive }) => ({
     textDecoration: isActive ? 'underline' : 'none',
   })
   return (
     <header>
       <div className={styles.container}>
-        <img className={styles.image} src={logo} alt="Logo de Kasa" />
-        <nav className={styles.nav}>
-          <NavLink className={styles.NavLink} to="/" style={isActiveNav}>
+        <img
+          className={styles.container__image}
+          src={logo}
+          alt="Logo de Kasa"
+        />
+        <nav className={styles.container__nav}>
+          <NavLink
+            className={styles.container__nav__NavLink}
+            to="/"
+            style={isActiveNav}
+          >
             Accueil
           </NavLink>
           <NavLink
-            className={styles.NavLink}
+            className={styles.container__nav__NavLink}
             to="/a_propos"
             style={isActiveNav}
           >

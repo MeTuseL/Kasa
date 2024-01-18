@@ -1,12 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+
 import Home from './pages/home'
-import Survey from './pages/survey'
-import Header from './components/header'
 import Error from './pages/error'
-import Footer from './components/footer'
 import Housing from './pages/housing'
+import About from './pages/about'
+import Header from './components/header'
+import Footer from './components/footer'
 
 import './css/global.css'
 import styles from './css/body.module.css'
@@ -20,12 +21,14 @@ root.render(
       <div className={styles.container}>
         {/*add a div for center body */}
         <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/survey/:questionNumber" element={<Survey />} />
-          <Route path="*" element={<Error />} />
-          <Route path="/housing/:idHousing" element={<Housing />} />
-        </Routes>
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/a_propos" element={<About />} />
+            <Route path="/logement/:idHousing" element={<Housing />} />
+            <Route path="*" element={<Error />} />
+          </Routes>
+        </main>
       </div>
       <Footer />
     </Router>

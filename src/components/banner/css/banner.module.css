@@ -6,12 +6,11 @@
     overflow: hidden;
     height: 200px;
     border-radius: 25px;
-    margin: 0 50px 50px 50px;
     margin-bottom: 50px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 
 }
-.image{
+.container__image{
     position: absolute;
     height: 100%;
     width: 100%;
@@ -19,7 +18,7 @@
     z-index: -1;
     filter: brightness(0.8);
 }
-.title{
+.container__title{
     font-size: 40px;
     font-weight: 500;
     color: white;

@@ -1,31 +1,93 @@
-.carrousel_container{
-    position: relative;
+.container_flex {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
-    align-items: center;
-    height: 400px;
-    border-radius: 25px;
-    overflow: hidden;
-    margin: 0 50px;
+    margin-bottom: 25px;
+}
+
+.container_left {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.container_left__site{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 5px;
+    margin-bottom: 25px;
+}
+
+.container_left__site__title {
+    font-size: 27px;
+    font-weight: 500;
+    color: #FF6060;
+}
+
+.container_left__site__location {
+    font-size: 15px;
+    font-weight: 500;
+    color: #FF6060;
+}
+
+.container_left__tag {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.container_right {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.container_right__host {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-bottom: 25px;
+    justify-content: flex-end;
+}
+
+.container_right__host__name {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    font-size: 17px;
+    font-weight: 500;
+    color: #FF6060;
+    margin-right: 5px;
+}
+
+.container_right__host__image {
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    object-fit: cover;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-.carrousel_image{
-    position: absolute;
-    object-fit: cover;
-    height: 100%;
+
+.container_right__rating {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 10px;
+    font-size: 20px;
+    justify-content: flex-end;
+}
+
+.container_collapse {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 10%;
+}
+
+.container_collapse__description,
+.container_collapse__equipements {
     width: 100%;
-    z-index: -1;
-    filter: brightness(0.85);
-}
-.carrousel_icon{
-    font-size: 60px;
-    color: white;
-    cursor: pointer;
-    padding: 20px;
-    transition: font-size 0.2s;
-}
-.carrousel_icon:hover{
-   font-size: 65px;
 }
