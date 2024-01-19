@@ -1,8 +1,27 @@
-.container{
+.container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 60px;
     padding: 40px;
     background-color: #F6F6F6;
     border-radius: 25px;
+}
+
+/*mobile version */
+
+@media screen and (max-width : 767px) {
+    .container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        background-color: initial;
+        padding: 0;
+    }
+}
+
+/*tablet version */
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .container {
+        grid-template-columns: 1fr 1fr;
+    }
 }

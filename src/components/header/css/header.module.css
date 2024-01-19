@@ -21,11 +21,49 @@
     height: 100%;
     width: 200px;
 }
+
 .container__nav__NavLink {
     font-size: 20px;
     font-weight: 500;
     color: #FF6060;
 }
+
 .container__nav__NavLink:hover {
     cursor: pointer;
+}
+
+/*mobile version */
+
+@media screen and (max-width : 767px) {
+    .container__nav {
+        width: 150px;
+    }
+
+    .container__nav__NavLink {
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+
+    .container__image {
+        margin-right: 15px;
+        width: 135px;
+        height: 35%;
+    }
+}
+
+@media screen and (max-width : 350px) {
+    .container__nav {
+        width: 150px;
+    }
+
+    .container__nav__NavLink {
+        font-size: 10px;
+        text-transform: uppercase;
+    }
+
+    .container__image {
+        margin-right: 15px;
+        width: 100px;
+        height: 28%;
+    }
 }

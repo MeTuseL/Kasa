@@ -1,4 +1,4 @@
-.container{
+.container {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -7,18 +7,45 @@
     gap: 100px;
     min-height: 100vh;
 }
-.container__image  {
-    width: 30%;
-    height: 200px;
-} 
-.container__title{
+
+.container__image {
+    width: 50%;
+    height: 300px;
+}
+
+.container__title {
     font-size: 28px;
     font-weight: 500;
     color: #FF6060;
+    text-align: center;
 }
-.container__Link{
+
+.container__Link {
     font-size: 17px;
     font-weight: 400;
     text-decoration: underline;
     color: #FF6060;
+    text-align: center;
+}
+
+/*mobile version */
+
+@media screen and (max-width : 767px) {
+    .container__image {
+        width: 60%;
+        height: 120px;
+    }
+
+    .container__title {
+        font-size: 22px;
+    }
+}
+
+/*tablet version */
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .container__image {
+        width: 50%;
+        height: 150px;
+    }
 }

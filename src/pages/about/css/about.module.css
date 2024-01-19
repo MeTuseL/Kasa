@@ -1,4 +1,4 @@
-.container{
+.container {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -6,4 +6,12 @@
     gap: 30px;
     height: 100vh;
     padding: 0 50px;
+}
+
+/*mobile version */
+
+@media screen and (max-width : 767px) {
+    .container {
+        padding: 0;
+    }
 }

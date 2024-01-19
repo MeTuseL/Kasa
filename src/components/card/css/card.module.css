@@ -1,4 +1,4 @@
-.container{
+.container {
     position: relative;
     display: flex;
     align-items: flex-end;
@@ -11,13 +11,16 @@
     transition: all 0.3s;
     background-color: #FF6060;
 }
-.container:hover{
+
+.container:hover {
     transform: scale(1.03);
 }
-.container:hover .container__image{
+
+.container:hover .container__image {
     bottom: 0px;
 }
-.container__image{
+
+.container__image {
     position: absolute;
     height: 110%;
     width: 100%;
@@ -26,8 +29,9 @@
     bottom: -5px;
     z-index: -1;
     filter: brightness(0.85);
-}   
-.container__title{
+}
+
+.container__title {
     display: flex;
     align-items: flex-end;
     width: 70%;
@@ -36,4 +40,12 @@
     padding: 0 0 20px 20px;
     color: white;
 
+}
+
+/*mobile version */
+
+@media screen and (max-width : 767px) {
+    .container {
+        height: 300px;
+    }
 }

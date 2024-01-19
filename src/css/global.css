@@ -1,20 +1,36 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+
 body {
   font-family: 'Montserrat', sans-serif;
 }
+
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
+
 li {
-  list-style-type: none 
+  list-style-type: none
 }
-header,main {
+
+header,
+main {
   margin: 0 50px;
 }
+
 main {
   min-height: 100vh;
+}
+
+/*mobile version */
+
+@media screen and (max-width : 767px) {
+
+  header,
+  main {
+    margin: 0 25px;
+  }
 }
