@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Projet_11_Kasa_Openclassroom_AUSTRIE_Uly/static/css/main.e468fb3b.css",
+    "main.js": "/Projet_11_Kasa_Openclassroom_AUSTRIE_Uly/static/js/main.a33284e0.js",
+    "static/media/banner_about.png": "/Projet_11_Kasa_Openclassroom_AUSTRIE_Uly/static/media/banner_about.abab3f12f4cb82f1dfa1.png",
+    "static/media/banner_Home.png": "/Projet_11_Kasa_Openclassroom_AUSTRIE_Uly/static/media/banner_Home.d00ae7dd3ef927bb988d.png",
+    "index.html": "/Projet_11_Kasa_Openclassroom_AUSTRIE_Uly/index.html",
+    "main.e468fb3b.css.map": "/Projet_11_Kasa_Openclassroom_AUSTRIE_Uly/static/css/main.e468fb3b.css.map",
+    "main.a33284e0.js.map": "/Projet_11_Kasa_Openclassroom_AUSTRIE_Uly/static/js/main.a33284e0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e468fb3b.css",
+    "static/js/main.a33284e0.js"
+  ]
+}
