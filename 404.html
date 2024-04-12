@@ -5,7 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Redirecting...</title>
   <script>
-    window.location.href = "/Kasa/a_propos";
+    const path = window.location.pathname;
+    const routes = {
+      "/Kasa/a_propos": "/Kasa/index.html#/a_propos",
+      "/Kasa/logement": "/Kasa/index.html#/logement",
+      "/Kasa": "/Kasa/index.html",
+    };
+
+    const redirectTo = routes[path];
+    if (redirectTo) {
+      window.location.href = redirectTo;
+    } else {
+      window.location.href = "/Kasa/index.html#/error"; 
+    }
   </script>
 </head>
 <body>
